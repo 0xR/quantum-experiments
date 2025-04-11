@@ -15,5 +15,6 @@ dependencies = [
     "qiskit-addon-obp",
     "qiskit-addon-mpf",
     "jupyter",
-    "qiskit[visualization]"
+    "qiskit[visualization]",
+    "appnope"
 ]
