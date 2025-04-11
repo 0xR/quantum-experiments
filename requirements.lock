@@ -137,6 +137,7 @@ certifi==2024.7.4 \
     --hash=sha256:5a1e7645bc0ec61a09e26c36f6106dd4cf40c6db3a1fb6352b0244e7fb057c7b \
     --hash=sha256:c198e21b1289c2ab85ee4e67bb4b4ef3ead0892059901a8d5b622f24a1101e90
     # via
+    #   qiskit-ibm-catalog
     #   qiskit-serverless
     #   requests
 cffi==1.17.1 \
@@ -577,6 +578,7 @@ importlib-metadata==8.4.0 \
     --hash=sha256:9a547d3bc3608b025f93d403fdd1aae741c24fbb8314df4b155675742ce303c5
     # via
     #   opentelemetry-api
+    #   qiskit-ibm-catalog
     #   qiskit-serverless
 ipython==8.35.0 \
     --hash=sha256:d200b7d93c3f5883fc36ab9ce28a18249c7706e51347681f80a0aef9895f2520 \
@@ -1517,6 +1519,10 @@ qiskit==2.0.0 \
     #   quantum-experiments (pyproject.toml)
     #   qiskit-ibm-runtime
     #   qiskit-serverless
+qiskit-ibm-catalog==0.5.0 \
+    --hash=sha256:0570f9e0b476731ae78db357ed23a6e30274871578e4396f32801335f72841d1 \
+    --hash=sha256:7a69d53be98d4bda91af876302491a149dc58b62353341ee9cd0d0be25d7deb8
+    # via quantum-experiments (pyproject.toml)
 qiskit-ibm-runtime==0.37.0 \
     --hash=sha256:656e8c97730125cd82c910722eefd3dc5bd4d22a7a8f868735629001995646e1 \
     --hash=sha256:d671cf398617e13844e8310187eb261636b1f82954edf0a060bfe37673065dac
@@ -1526,7 +1532,9 @@ qiskit-ibm-runtime==0.37.0 \
 qiskit-serverless==0.21.1 \
     --hash=sha256:7681bfb95ab13b331b81026530b1b75c2f42507f4a420c91149af53bc02947c0 \
     --hash=sha256:fcf820af9c62a1a23598e6e67f47be3d1b645199188d1e071a9110f5679a333f
-    # via quantum-experiments (pyproject.toml)
+    # via
+    #   quantum-experiments (pyproject.toml)
+    #   qiskit-ibm-catalog
 ray==2.34.0 \
     --hash=sha256:230eef15981cec90e868eff32ad5756e4fee53c2855c890a2d1243617df73c8e \
     --hash=sha256:2315ca4eeb2c87264a7be38acf128803dffb2af2476e6322acd3f889129e4575 \

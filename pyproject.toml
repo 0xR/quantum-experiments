@@ -7,5 +7,6 @@ requires-python = ">=3.11,<3.12"
 dependencies = [
     "qiskit",
     "qiskit-ibm-runtime",
-    "qiskit_serverless"
+    "qiskit_serverless",
+    "qiskit-ibm-catalog"
 ]
