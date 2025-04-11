@@ -8,5 +8,6 @@ dependencies = [
     "qiskit",
     "qiskit-ibm-runtime",
     "qiskit_serverless",
-    "qiskit-ibm-catalog"
+    "qiskit-ibm-catalog",
+    "qiskit-ibm-transpiler"
 ]
