@@ -18,5 +18,6 @@ dependencies = [
     "qiskit[visualization]",
     "appnope",
     "pre-commit",
-    "nbstripout"
+    "nbstripout",
+    "qiskit-aer"
 ]
