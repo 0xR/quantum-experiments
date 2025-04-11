@@ -9,5 +9,9 @@ dependencies = [
     "qiskit-ibm-runtime",
     "qiskit_serverless",
     "qiskit-ibm-catalog",
-    "qiskit-ibm-transpiler"
+    "qiskit-ibm-transpiler",
+    "qiskit-addon-sqd",
+    "qiskit-addon-aqc-tensor[quimb-jax]",
+    "qiskit-addon-obp",
+    "qiskit-addon-mpf"
 ]
