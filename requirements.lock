@@ -127,7 +127,9 @@ anyio==4.9.0 \
 appnope==0.1.4 \
     --hash=sha256:1de3860566df9caf38f01f86f65e0e13e379af54f9e4bee1e66b48f2efffd1ee \
     --hash=sha256:502575ee11cd7a28c0205f379b525beefebab9d161b7c964670864014ed7213c
-    # via quantum-experiments (pyproject.toml)
+    # via
+    #   quantum-experiments (pyproject.toml)
+    #   ipykernel
 argon2-cffi==23.1.0 \
     --hash=sha256:879c3e79a2729ce768ebb7d36d4609e3a78a4ca2ec3a9f12286ca057e3d0db08 \
     --hash=sha256:c670642b78ba29641818ab2e68bd4e6a78ba53b7eff7b4c3815ae16abf91c7ea
@@ -696,6 +698,9 @@ distlib==0.3.9 \
     --hash=sha256:47f8c22fd27c27e25a65601af709b38e4f0a45ea4fc2e710f65755fa8caaaf87 \
     --hash=sha256:a60f20dea646b8a33f3e7772f74dc0b2d0772d2837ee1342a00645c81edf9403
     # via virtualenv
+docplex==2.29.241 \
+    --hash=sha256:ad5250396be0cea02b732710795bb9e345d9923bbb0bf66520f66eb8f1e988ad
+    # via qiskit-optimization
 executing==2.2.0 \
     --hash=sha256:11387150cad388d62750327a53d3339fad4888b39a6fe233c3afbb54ecffd3aa \
     --hash=sha256:5d108c028108fe2551d1a7b2e8b713341e2cb4fc0aa7dcf966fa4327a5226755
@@ -1712,7 +1717,9 @@ nest-asyncio==1.6.0 \
 networkx==3.4.2 \
     --hash=sha256:307c3669428c5362aab27c8a1260aa8f47c4e91d3891f48be0141738d8d053e1 \
     --hash=sha256:df5d4365b724cf81b8c6a7312509d0c22386097011ad1abe274afd5e9d3bbc5f
-    # via qiskit-addon-aqc-tensor
+    # via
+    #   qiskit-addon-aqc-tensor
+    #   qiskit-optimization
 nodeenv==1.9.1 \
     --hash=sha256:6ec12890a2dab7946721edbfbcd91f3319c6ccc9aec47be7c7e6b7011ee6645f \
     --hash=sha256:ba11c9782d29c27c70ffbdda2d7415098754709be8a7056d79a737cd901155c9
@@ -1825,7 +1832,9 @@ numpy==2.2.4 \
     #   qiskit-addon-obp
     #   qiskit-addon-sqd
     #   qiskit-aer
+    #   qiskit-algorithms
     #   qiskit-ibm-runtime
+    #   qiskit-optimization
     #   qiskit-serverless
     #   quimb
     #   ray
@@ -2653,8 +2662,10 @@ qiskit==2.0.0 \
     #   qiskit-addon-obp
     #   qiskit-addon-sqd
     #   qiskit-aer
+    #   qiskit-algorithms
     #   qiskit-ibm-runtime
     #   qiskit-ibm-transpiler
+    #   qiskit-optimization
     #   qiskit-qasm3-import
     #   qiskit-quimb
     #   qiskit-serverless
@@ -2716,6 +2727,10 @@ qiskit-aer==0.17.0 \
     --hash=sha256:fb73909ae556efc29cb4ccf4004a519b61e1d09126bc7571675f927627deb80c \
     --hash=sha256:fd2e93011f7fe7fc5c825544af5d9fe1470df8e9152a4461f23f1a7fe8cf4c9b
     # via quantum-experiments (pyproject.toml)
+qiskit-algorithms==0.3.1 \
+    --hash=sha256:cba9c573d47c0f9508745a5a2794298084ec4f8833781b426fa9b2cea0fca794 \
+    --hash=sha256:d6c31d88a1ed65a9c6382c233ef10ecb9562e726f7b1b7823a0d178d63d29a0a
+    # via qiskit-optimization
 qiskit-ibm-catalog==0.5.0 \
     --hash=sha256:0570f9e0b476731ae78db357ed23a6e30274871578e4396f32801335f72841d1 \
     --hash=sha256:7a69d53be98d4bda91af876302491a149dc58b62353341ee9cd0d0be25d7deb8
@@ -2729,6 +2744,10 @@ qiskit-ibm-runtime==0.37.0 \
 qiskit-ibm-transpiler==0.11.0 \
     --hash=sha256:0e085d93b0d60b6eef0b79843cbdc7c0917ff2889648fa3e9ec52d3f582865f0 \
     --hash=sha256:2cde61621de9b3dc5439754e9f0bfc76ea85a4c86ada2c55c9d29b7b5e3abfe7
+    # via quantum-experiments (pyproject.toml)
+qiskit-optimization==0.6.1 \
+    --hash=sha256:0ad8c2bc83fe80657c788b5f282ce4055d0ec005c4876789e5069499ee3c00c0 \
+    --hash=sha256:3f09f31289dfef66bbbb03b782a94d88a4ba5681c728b4b8e96884de5fc83879
     # via quantum-experiments (pyproject.toml)
 qiskit-qasm3-import==0.5.1 \
     --hash=sha256:334fff0080667fe9cb39e807b0875a2658b01d33b4c964a8816411b30938c107 \
@@ -3011,6 +3030,8 @@ scipy==1.15.2 \
     #   qiskit-addon-aqc-tensor
     #   qiskit-addon-sqd
     #   qiskit-aer
+    #   qiskit-algorithms
+    #   qiskit-optimization
     #   quimb
     #   scs
 scs==3.2.7.post2 \
@@ -3071,10 +3092,12 @@ setuptools==78.1.0 \
     #   osqp
     #   pbr
     #   pyscf
+    #   qiskit-optimization
 six==1.17.0 \
     --hash=sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274 \
     --hash=sha256:ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81
     # via
+    #   docplex
     #   opencensus
     #   python-dateutil
     #   rfc3339-validator
