@@ -127,9 +127,7 @@ anyio==4.9.0 \
 appnope==0.1.4 \
     --hash=sha256:1de3860566df9caf38f01f86f65e0e13e379af54f9e4bee1e66b48f2efffd1ee \
     --hash=sha256:502575ee11cd7a28c0205f379b525beefebab9d161b7c964670864014ed7213c
-    # via
-    #   quantum-experiments (pyproject.toml)
-    #   ipykernel
+    # via quantum-experiments (pyproject.toml)
 argon2-cffi==23.1.0 \
     --hash=sha256:879c3e79a2729ce768ebb7d36d4609e3a78a4ca2ec3a9f12286ca057e3d0db08 \
     --hash=sha256:c670642b78ba29641818ab2e68bd4e6a78ba53b7eff7b4c3815ae16abf91c7ea
@@ -1718,6 +1716,7 @@ networkx==3.4.2 \
     --hash=sha256:307c3669428c5362aab27c8a1260aa8f47c4e91d3891f48be0141738d8d053e1 \
     --hash=sha256:df5d4365b724cf81b8c6a7312509d0c22386097011ad1abe274afd5e9d3bbc5f
     # via
+    #   quantum-experiments (pyproject.toml)
     #   qiskit-addon-aqc-tensor
     #   qiskit-optimization
 nodeenv==1.9.1 \
@@ -1814,6 +1813,7 @@ numpy==2.2.4 \
     --hash=sha256:f486038e44caa08dbd97275a9a35a283a8f1d2f0ee60ac260a1790e76660833c \
     --hash=sha256:f7de08cbe5551911886d1ab60de58448c6df0f67d9feb7d1fb21e9875ef95e91
     # via
+    #   quantum-experiments (pyproject.toml)
     #   clarabel
     #   contourpy
     #   cvxpy

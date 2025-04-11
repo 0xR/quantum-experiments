@@ -20,5 +20,7 @@ dependencies = [
     "appnope",
     "pre-commit",
     "nbstripout",
-    "qiskit-aer"
+    "qiskit-aer",
+    "numpy",
+    "networkx"
 ]
