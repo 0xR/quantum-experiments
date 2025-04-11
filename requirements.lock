@@ -1413,6 +1413,7 @@ matplotlib==3.10.1 \
     --hash=sha256:e9b4bb156abb8fa5e5b2b460196f7db7264fc6d62678c03457979e7d5254b7be \
     --hash=sha256:ff2ae14910be903f4a24afdbb6d7d3a6c44da210fc7d42790b87aeac92238a16
     # via
+    #   quantum-experiments (pyproject.toml)
     #   qiskit
     #   qiskit-addon-obp
     #   seaborn
