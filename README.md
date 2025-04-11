@@ -2,7 +2,13 @@
 
 Make sure you have `uv` installed. When you're on Mac run `brew install uv`
 
-Next create a venv by running `uv venv`
+Create and activate a virtual environment:
+```
+uv venv
+source .venv/bin/activate  # On Unix/MacOS
+# or
+.venv\Scripts\activate     # On Windows
+```
 
 Now run
 
@@ -17,7 +23,14 @@ to install the dependencies
 
 This repository uses pre-commit hooks to automatically clean Jupyter notebook outputs before committing. This keeps our git history clean and focused on the actual notebook content.
 
-After installing dependencies, just run:
+After installing dependencies, activate the virtual environment:
+```
+source .venv/bin/activate  # On Unix/MacOS
+# or
+.venv\Scripts\activate     # On Windows
+```
+
+Then run:
 ```
 pre-commit install
 ```
