@@ -16,5 +16,7 @@ dependencies = [
     "qiskit-addon-mpf",
     "jupyter",
     "qiskit[visualization]",
-    "appnope"
+    "appnope",
+    "pre-commit",
+    "nbstripout"
 ]
