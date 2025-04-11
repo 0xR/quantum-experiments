@@ -13,5 +13,7 @@ dependencies = [
     "qiskit-addon-sqd",
     "qiskit-addon-aqc-tensor[quimb-jax]",
     "qiskit-addon-obp",
-    "qiskit-addon-mpf"
+    "qiskit-addon-mpf",
+    "jupyter",
+    "qiskit[visualization]"
 ]
